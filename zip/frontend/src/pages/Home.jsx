@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { assets } from '../assets/manifest';
 import FactoryModel from '../components/FactoryModel';
 import TalentPipeline from '../components/TalentPipeline';
@@ -17,12 +18,16 @@ export default function Home() {
           <h1>We build the <mark>enterprise-ready</mark> Human + AI workforce.</h1>
           <p className="sub">A next-generation Talent Transformation Company. Our AI Talent Factory transforms talent into enterprise-ready professionals — through role-based pathways, hands-on product engineering, and real-world deployment.</p>
           <div className="ctas">
-            <a href="#home" className="btn btn-yellow" data-scroll="factory-model" data-nav>Explore the Factory</a>
-            <a href="#contact" className="btn btn-ghost" data-nav>Get Started</a>
+            <Link to="/#factory-model" className="btn btn-yellow">Explore the Factory</Link>
+            <Link to="/contact" className="btn btn-ghost">Get Started</Link>
           </div>
         </div>
-        <div className="viz-card reveal hero-logo-card">
-          <img src={assets['logo-hero']} alt="EmpowerED Careers logo" className="hero-logo-img" />
+        <div className="reveal">
+          <img
+            src={assets['hero-handshake-main-v3']}
+            alt="An AI robot and a professional shaking hands"
+            className="w-full max-w-[560px] h-auto block ml-auto"
+          />
         </div>
       </div>
     </div>
@@ -83,7 +88,7 @@ export default function Home() {
         <div className="box"><div className="num" style={{background: '#3f8f6f'}}>2</div><small>8–16 WEEKS</small><h3>Specialization</h3><p>Deep capability in one high-demand domain.</p></div>
         <div className="box"><div className="num" style={{background: '#F6DB2D'}}>3</div><small>ENTERPRISE READY</small><h3>Expertise</h3><p>Deployed on real enterprise work until Day-1 billable.</p></div>
       </div>
-      <a href="#programs" className="btn btn-green" data-nav>Explore the programs →</a>
+      <Link to="/programs" className="btn btn-green">Explore the programs →</Link>
     </div>
   </section>
 
@@ -94,7 +99,7 @@ export default function Home() {
         <span className="eyebrow">AI for Everyone</span>
         <h2 style={{fontSize: 'clamp(26px,3.4vw,38px)', margin: '14px 0 14px'}}>Every profession. <mark>AI enabled</mark>. Future ready.</h2>
         <p className="muted" style={{fontSize: '16px', marginBottom: '22px'}}>AI is the new digital literacy. We equip students, professionals, entrepreneurs, and organizations with practical, profession-specific AI skills that improve productivity, decision-making, creativity, and career growth.</p>
-        <a href="#ai-for-everyone" className="btn btn-outline" data-nav>Explore AI for Everyone →</a>
+        <Link to="/ai-for-everyone" className="btn btn-outline">Explore AI for Everyone →</Link>
       </div>
       <div className="reveal"><img src={assets['home-ai-teaser']} alt="A professional working naturally alongside an AI assistant"/></div>
     </div>
@@ -106,11 +111,11 @@ export default function Home() {
       <h2>End-to-end talent transformation for everyone.</h2>
       <p className="muted">We help individuals, enterprises, institutions, startups, and governments build future-ready Human + AI capabilities.</p></div>
     <div className="offers reveal">
-      <a href="#solutions" className="offer lead" data-scroll="sol-enterprises" data-nav><div className="iconwrap"><svg className="ico" viewBox="0 0 32 32"><rect fill="#8FD97F" x="5" y="7" width="22" height="21" rx="2.5"/><rect fill="#F6DB2D" x="9" y="11" width="5" height="5" rx="1"/><rect fill="#F6DB2D" x="18" y="11" width="5" height="5" rx="1"/><rect fill="#F6DB2D" x="9" y="19" width="5" height="5" rx="1"/><rect fill="#F6DB2D" x="18" y="19" width="5" height="5" rx="1"/></svg></div><span className="tg">For Enterprises</span><h3>Your managed, enterprise-ready talent pipeline.</h3><p>Capability assessment, graduate hiring &amp; deployment, BOT talent models, and dedicated AI Talent Factories.</p><span className="lnk">Explore →</span></a>
-      <a href="#solutions" className="offer sub" data-scroll="sol-institutions" data-nav><div className="iconwrap"><svg className="ico" viewBox="0 0 32 32"><polygon fill="#8FD97F" points="16,2 28,8.5 28,23.5 16,30 4,23.5 4,8.5"/><polygon fill="#F6DB2D" points="16,9 18.6,14.6 24.5,15.2 20,19.2 21.3,25 16,22 10.7,25 12,19.2 7.5,15.2 13.4,14.6"/></svg></div><span className="tg">For Universities</span><h3>Turn your campus into a future-workforce hub.</h3><p>Industry-aligned curriculum, AI Centres of Excellence, faculty development, and placement readiness.</p><span className="lnk">Explore →</span></a>
-      <a href="#solutions" className="offer sub" data-scroll="sol-students" data-nav><div className="iconwrap"><svg className="ico" viewBox="0 0 32 32"><polygon fill="#155F4B" points="16,1.5 22.5,15 16,11.5 9.5,15"/><rect fill="#155F4B" x="12.5" y="11" width="7" height="13" rx="1"/><polygon fill="#155F4B" points="9.5,15 5,25 9.5,22"/><polygon fill="#155F4B" points="22.5,15 27,25 22.5,22"/><circle fill="#5AB94B" cx="16" cy="13" r="3.2"/><rect fill="#5AB94B" x="13.8" y="24" width="4.4" height="6.5" rx="2.2"/></svg></div><span className="tg">For Students &amp; Professionals</span><h3>Launch or reinvent your career.</h3><p>Career-readiness pathways, upskilling &amp; reskilling, certifications, and career assurance.</p><span className="lnk">Explore →</span></a>
+      <Link to="/solutions#sol-enterprises" className="offer lead"><div className="iconwrap"><svg className="ico" viewBox="0 0 32 32"><rect fill="#8FD97F" x="5" y="7" width="22" height="21" rx="2.5"/><rect fill="#F6DB2D" x="9" y="11" width="5" height="5" rx="1"/><rect fill="#F6DB2D" x="18" y="11" width="5" height="5" rx="1"/><rect fill="#F6DB2D" x="9" y="19" width="5" height="5" rx="1"/><rect fill="#F6DB2D" x="18" y="19" width="5" height="5" rx="1"/></svg></div><span className="tg">For Enterprises</span><h3>Your managed, enterprise-ready talent pipeline.</h3><p>Capability assessment, graduate hiring &amp; deployment, BOT talent models, and dedicated AI Talent Factories.</p><span className="lnk">Explore →</span></Link>
+      <Link to="/solutions#sol-institutions" className="offer sub"><div className="iconwrap"><svg className="ico" viewBox="0 0 32 32"><polygon fill="#8FD97F" points="16,2 28,8.5 28,23.5 16,30 4,23.5 4,8.5"/><polygon fill="#F6DB2D" points="16,9 18.6,14.6 24.5,15.2 20,19.2 21.3,25 16,22 10.7,25 12,19.2 7.5,15.2 13.4,14.6"/></svg></div><span className="tg">For Universities</span><h3>Turn your campus into a future-workforce hub.</h3><p>Industry-aligned curriculum, AI Centres of Excellence, faculty development, and placement readiness.</p><span className="lnk">Explore →</span></Link>
+      <Link to="/solutions#sol-students" className="offer sub"><div className="iconwrap"><svg className="ico" viewBox="0 0 32 32"><polygon fill="#155F4B" points="16,1.5 22.5,15 16,11.5 9.5,15"/><rect fill="#155F4B" x="12.5" y="11" width="7" height="13" rx="1"/><polygon fill="#155F4B" points="9.5,15 5,25 9.5,22"/><polygon fill="#155F4B" points="22.5,15 27,25 22.5,22"/><circle fill="#5AB94B" cx="16" cy="13" r="3.2"/><rect fill="#5AB94B" x="13.8" y="24" width="4.4" height="6.5" rx="2.2"/></svg></div><span className="tg">For Students &amp; Professionals</span><h3>Launch or reinvent your career.</h3><p>Career-readiness pathways, upskilling &amp; reskilling, certifications, and career assurance.</p><span className="lnk">Explore →</span></Link>
     </div>
-    <div style={{textAlign: 'center', marginTop: '26px'}}><a href="#solutions" className="btn btn-dark" data-nav>See all six client types →</a></div>
+    <div style={{textAlign: 'center', marginTop: '26px'}}><Link to="/solutions" className="btn btn-dark">See all six client types →</Link></div>
   </section>
 
   
@@ -136,7 +141,7 @@ export default function Home() {
     <img src={assets['hero-handshake-detail-v3']} alt="A robotic hand and a human hand clasped together" style={{width: '180px', height: 'auto', margin: '0 auto 20px', display: 'block'}}/>
     <h2>Learn. Build. Validate. Deploy.</h2>
     <p>We transform talent into enterprise-ready professionals equipped to succeed in the AI-powered future of work.</p>
-    <div className="ctas"><a href="#contact" className="btn btn-yellow" data-nav>Get Started</a><a href="#home" className="btn btn-ghost" data-scroll="factory-model" data-nav>Explore the Factory</a></div>
+    <div className="ctas"><Link to="/contact" className="btn btn-yellow">Get Started</Link><Link to="/#factory-model" className="btn btn-ghost">Explore the Factory</Link></div>
   </div></section>
     </>
   );
