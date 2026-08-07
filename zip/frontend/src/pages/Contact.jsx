@@ -104,7 +104,7 @@ export default function Contact() {
                className="banner-illustration reveal" style={{ marginBottom: '16px' }} />
 
           <div className="cinfo reveal">
-            <div className="box"><strong>Talk to Us</strong><span>+91-63794 73374</span></div>
+            <div className="box"><strong>Talk to Us</strong><span>+91-75399 99500</span></div>
             <div className="box"><strong>Email</strong><span>info@EmpowerEDcareers.ai</span></div>
             <div className="box"><strong>Address</strong><span>4th floor, SIDCO Industrial Estate, Guindy, Chennai, Tamil Nadu 600032</span></div>
             <div className="box"><strong>Web</strong><span>www.EmpowerEDcareers.ai</span></div>
