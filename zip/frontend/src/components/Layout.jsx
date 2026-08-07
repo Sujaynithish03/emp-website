@@ -151,7 +151,7 @@ export default function Layout() {
           <div className="fgrid">
             <div>
               <div className="fbrand">
-                <span className="flogo-pill"><img src={pngAssets.logo} alt="EmpowerED Careers" className="flogo-img" /></span>
+                <img src={pngAssets.logo} alt="EmpowerED Careers" style={{height: '80px', width: 'auto', display: 'block', marginBottom: '16px'}} />
               </div>
               <p style={{ maxWidth: '270px', fontSize: '14px' }}>
                 Empowering Talent. Transforming Futures. The AI Talent Factory — a Talent Transformation Company by Teceze.
