@@ -41,12 +41,12 @@ export default function Home() {
         <h2>A trusted <mark>pipeline of high-quality talent</mark> for employers.</h2></div>
       <div style={{position: 'relative', display: 'inline-block', width: '100%', marginBottom: '40px'}} className="reveal">
         <img src={assets['home-advantage-banner']} alt="A professional connected to five badges representing enterprise-ready skills" className="banner-illustration" style={{width: '100%', height: 'auto', display: 'block'}}/>
-        <div style={{position: 'absolute', top: '40px', right: '50px', textAlign: 'center', padding: '28px 24px', background: '#fff', borderRadius: '20px', backdropFilter: 'blur(10px)', boxShadow: '0 10px 40px rgba(0,0,0,0.15)', border: '2px solid var(--yellow)', minWidth: '180px'}}>
-          <div style={{fontSize: '12px', fontWeight: '900', letterSpacing: '2.5px', color: 'var(--secondary)', marginBottom: '16px', textTransform: 'uppercase'}}>► Scan to Connect</div>
-          <img src={assets['qrcode']} alt="Scan to connect QR code" style={{width: '140px', height: '140px', borderRadius: '8px', margin: '0 auto 16px', display: 'block', objectFit: 'cover'}}/>
-          <div style={{fontSize: '16px', fontWeight: '900', color: 'var(--dark)', marginBottom: '8px', lineHeight: '1.2'}}>Explore Opportunities</div>
-          <div style={{fontSize: '13px', color: '#333', lineHeight: '1.5', fontWeight: '700', marginBottom: '14px'}}>Scan & join our talent pipeline</div>
-          <div style={{fontSize: '11px', color: 'var(--secondary)', fontWeight: '800', marginTop: '10px', paddingTop: '12px', borderTop: '2px solid var(--yellow)', letterSpacing: '0.5px'}}>✓ Instant Access • ✓ No Sign-up</div>
+        <div style={{position: 'absolute', top: '20px', right: '40px', textAlign: 'center', padding: '40px 32px', background: '#fff', borderRadius: '24px', backdropFilter: 'blur(10px)', boxShadow: '0 16px 48px rgba(0,0,0,0.18)', border: '3px solid var(--yellow)', width: '280px'}}>
+          <div style={{fontSize: '13px', fontWeight: '900', letterSpacing: '3px', color: 'var(--secondary)', marginBottom: '22px', textTransform: 'uppercase'}}>► Scan to Connect</div>
+          <img src={assets['qrcode']} alt="Scan to connect QR code" style={{width: '210px', height: '210px', borderRadius: '10px', margin: '0 auto 24px', display: 'block', objectFit: 'cover'}}/>
+          <div style={{fontSize: '18px', fontWeight: '900', color: 'var(--dark)', marginBottom: '10px', lineHeight: '1.3'}}>Explore Opportunities</div>
+          <div style={{fontSize: '14px', color: '#333', lineHeight: '1.6', fontWeight: '700', marginBottom: '18px'}}>Scan & join our talent pipeline</div>
+          <div style={{fontSize: '12px', color: 'var(--secondary)', fontWeight: '800', marginTop: '14px', paddingTop: '16px', borderTop: '3px solid var(--yellow)', letterSpacing: '0.8px'}}>✓ Instant Access • ✓ No Sign-up</div>
         </div>
       </div>
       <div className="advantage reveal">
