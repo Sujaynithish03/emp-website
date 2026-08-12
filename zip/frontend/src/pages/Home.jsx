@@ -42,7 +42,7 @@ export default function Home() {
       <div style={{position: 'relative', display: 'inline-block', width: '100%', marginBottom: '40px'}} className="reveal">
         <img src={assets['home-advantage-banner']} alt="A professional connected to five badges representing enterprise-ready skills" className="banner-illustration" style={{width: '100%', height: 'auto', display: 'block'}}/>
         <div style={{position: 'absolute', top: '20px', right: '40px', textAlign: 'center', padding: '40px 32px', background: 'var(--dark)', borderRadius: '24px', backdropFilter: 'blur(10px)', boxShadow: '0 16px 48px rgba(0,0,0,0.25)', width: '280px'}}>
-          <div style={{fontSize: '13px', fontWeight: '900', letterSpacing: '3px', color: 'var(--yellow)', marginBottom: '22px', textTransform: 'uppercase'}}>► Scan to Connect</div>
+          <div style={{fontSize: '18px', fontWeight: '900', letterSpacing: '2px', color: '#fff', marginBottom: '28px', textTransform: 'uppercase', lineHeight: '1.3'}}>► Scan to Connect</div>
           <div style={{width: '210px', height: '210px', borderRadius: '10px', margin: '0 auto 24px', background: '#fff', padding: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
             <img src={assets['qrcode']} alt="Scan to connect QR code" style={{width: '100%', height: '100%', borderRadius: '4px', display: 'block', objectFit: 'contain'}}/>
           </div>
