@@ -39,16 +39,55 @@ export default function Home() {
     <div className="inner">
       <div className="shead reveal"><span className="eyebrow">Enterprise Talent Advantage</span>
         <h2>A trusted <mark>pipeline of high-quality talent</mark> for employers.</h2></div>
-      <div style={{position: 'relative', display: 'inline-block', width: '100%', marginBottom: '40px', marginTop: '-80px'}} className="reveal">
-        <img src={assets['home-advantage-banner']} alt="A professional connected to five badges representing enterprise-ready skills" className="banner-illustration" style={{width: '100%', height: 'auto', display: 'block'}}/>
-        <div style={{position: 'absolute', top: '-60px', right: '30px', textAlign: 'center', padding: '40px 32px', background: 'var(--dark)', borderRadius: '24px', backdropFilter: 'blur(10px)', boxShadow: '0 16px 48px rgba(0,0,0,0.25)', width: '320px'}}>
-          <div style={{fontSize: '18px', fontWeight: '900', letterSpacing: '2px', color: '#fff', marginBottom: '28px', textTransform: 'uppercase', lineHeight: '1.3'}}>► Scan to Connect</div>
-          <div style={{width: '210px', height: '210px', borderRadius: '10px', margin: '0 auto 24px', background: '#fff', padding: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-            <img src={assets['qrcode']} alt="Scan to connect QR code" style={{width: '100%', height: '100%', borderRadius: '4px', display: 'block', objectFit: 'contain'}}/>
+      <div
+        style={{
+          position: 'relative',
+          display: 'inline-block',
+          width: '100%',
+          marginBottom: '40px',
+          marginTop: '-80px'
+        }}
+        className="reveal"
+      >
+        <img
+          src={assets['home-advantage-banner']}
+          alt="A professional connected to five badges representing enterprise-ready skills"
+          className="banner-illustration"
+          style={{width: '100%', height: 'auto', display: 'block'}}
+        />
+        <div
+          style={{
+            position: 'absolute',
+            top: '-60px',
+            right: '30px',
+            textAlign: 'center',
+            padding: '40px 32px',
+            background: 'var(--dark)',
+            borderRadius: '24px',
+            backdropFilter: 'blur(10px)',
+            boxShadow: '0 16px 48px rgba(0,0,0,0.25)',
+            width: '320px'
+          }}
+        >
+          <div style={{fontSize: '18px', fontWeight: '900', letterSpacing: '2px', color: '#fff', marginBottom: '28px', textTransform: 'uppercase', lineHeight: '1.3'}}>
+            ► Scan to Connect
           </div>
-          <div style={{fontSize: '18px', fontWeight: '900', color: '#fff', marginBottom: '10px', lineHeight: '1.3'}}>Explore Opportunities</div>
-          <div style={{fontSize: '14px', color: 'rgba(255,255,255,0.85)', lineHeight: '1.6', fontWeight: '700', marginBottom: '18px'}}>Scan & join our talent pipeline</div>
-          <div style={{fontSize: '12px', color: 'var(--yellow)', fontWeight: '800', marginTop: '14px', paddingTop: '16px', borderTop: '3px solid var(--yellow)', letterSpacing: '0.8px'}}>✓ Instant Access • ✓ No Sign-up</div>
+          <div style={{width: '210px', height: '210px', borderRadius: '10px', margin: '0 auto 24px', background: '#fff', padding: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+            <img
+              src={assets['qrcode']}
+              alt="Scan to connect QR code"
+              style={{width: '100%', height: '100%', borderRadius: '4px', display: 'block', objectFit: 'contain'}}
+            />
+          </div>
+          <div style={{fontSize: '18px', fontWeight: '900', color: '#fff', marginBottom: '10px', lineHeight: '1.3'}}>
+            Explore Opportunities
+          </div>
+          <div style={{fontSize: '14px', color: 'rgba(255,255,255,0.85)', lineHeight: '1.6', fontWeight: '700', marginBottom: '18px'}}>
+            Scan & join our talent pipeline
+          </div>
+          <div style={{fontSize: '12px', color: 'var(--yellow)', fontWeight: '800', marginTop: '14px', paddingTop: '16px', borderTop: '3px solid var(--yellow)', letterSpacing: '0.8px'}}>
+            ✓ Instant Access • ✓ No Sign-up
+          </div>
         </div>
       </div>
       <div className="advantage reveal">
