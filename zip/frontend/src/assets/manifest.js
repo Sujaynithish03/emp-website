@@ -92,6 +92,7 @@ import a_track_cybersecurity from './track-cybersecurity.webp';
 import a_track_data_eng from './track-data-eng.webp';
 import a_track_enterprise_tech from './track-enterprise-tech.webp';
 import a_track_iot from './track-iot.webp';
+import a_qrcode from './qrcode.jpg';
 
 export const assets = {
   'about-capabilities': a_about_capabilities,
@@ -186,4 +187,5 @@ export const assets = {
   'track-data-eng': a_track_data_eng,
   'track-enterprise-tech': a_track_enterprise_tech,
   'track-iot': a_track_iot,
+  'qrcode': a_qrcode,
 };
