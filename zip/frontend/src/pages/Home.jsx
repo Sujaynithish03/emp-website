@@ -126,16 +126,6 @@ export default function Home() {
     <div className="marquee reveal" aria-label="Partner ecosystem"><div className="mtrack"><div className="plist mset"><span>Microsoft Azure</span><span>AWS</span><span>Google Cloud</span><span>Lenovo</span><span>Dell</span><span>HP</span><span>CrowdStrike</span><span>Fortinet</span><span>Mimecast</span><span>Zoho</span><span>Infosys</span><span>HCL</span><span>Wipro</span></div><div className="plist mset" aria-hidden="true"><span>Microsoft Azure</span><span>AWS</span><span>Google Cloud</span><span>Lenovo</span><span>Dell</span><span>HP</span><span>CrowdStrike</span><span>Fortinet</span><span>Mimecast</span><span>Zoho</span><span>Infosys</span><span>HCL</span><span>Wipro</span></div></div></div>
   </section>
 
-  
-  <section className="band">
-    <div className="shead center reveal" style={{margin: '0 auto 40px'}}><span className="eyebrow">Proof</span>
-      <h2>From potential to production</h2></div>
-    <div className="tst reveal">
-      <div className="q"><p>“EmpowerED transformed my career. Hands-on AI engineering and real production experience gave me the confidence to land my dream role. I was billable from day one.”</p><div className="who"><span className="av">PS</span><div><strong>Priya Sharma</strong><span>AI Engineer</span></div></div></div>
-      <div className="q"><p>“From a non-IT background, I was skeptical. But the structured AWS pathway and enterprise simulations prepared me perfectly. I switched careers in just 18 weeks.”</p><div className="who"><span className="av">RK</span><div><strong>Rajesh Kumar</strong><span>Cloud Engineer</span></div></div></div>
-      <div className="q"><p>“The enterprise partnership connected me directly with my employer. Working real SIEM platforms inside an agile squad made all the difference.”</p><div className="who"><span className="av">AP</span><div><strong>Aisha Patel</strong><span>Cybersecurity Analyst</span></div></div></div>
-    </div>
-  </section>
 
   <section className="ctaband"><span className="glow"></span><span className="grid-ovl"></span><div className="inner reveal">
     <img src={assets['hero-handshake-detail-v3']} alt="A robotic hand and a human hand clasped together" style={{width: '180px', height: 'auto', margin: '0 auto 20px', display: 'block'}}/>
