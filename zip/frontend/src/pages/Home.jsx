@@ -41,7 +41,7 @@ export default function Home() {
         <h2>A trusted <mark>pipeline of high-quality talent</mark> for employers.</h2></div>
       <div style={{position: 'relative', display: 'inline-block', width: '100%', marginBottom: '40px'}} className="reveal">
         <img src={assets['home-advantage-banner']} alt="A professional connected to five badges representing enterprise-ready skills" className="banner-illustration" style={{width: '100%', height: 'auto', display: 'block'}}/>
-        <div style={{position: 'absolute', top: '20px', right: '40px', textAlign: 'center', padding: '40px 32px', background: 'var(--dark)', borderRadius: '24px', backdropFilter: 'blur(10px)', boxShadow: '0 16px 48px rgba(0,0,0,0.25)', width: '280px'}}>
+        <div style={{position: 'absolute', top: '10px', right: '40px', textAlign: 'center', padding: '40px 32px', background: 'var(--dark)', borderRadius: '24px', backdropFilter: 'blur(10px)', boxShadow: '0 16px 48px rgba(0,0,0,0.25)', width: '280px'}}>
           <div style={{fontSize: '18px', fontWeight: '900', letterSpacing: '2px', color: '#fff', marginBottom: '28px', textTransform: 'uppercase', lineHeight: '1.3'}}>► Scan to Connect</div>
           <div style={{width: '210px', height: '210px', borderRadius: '10px', margin: '0 auto 24px', background: '#fff', padding: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
             <img src={assets['qrcode']} alt="Scan to connect QR code" style={{width: '100%', height: '100%', borderRadius: '4px', display: 'block', objectFit: 'contain'}}/>
@@ -137,6 +137,16 @@ export default function Home() {
     <div className="marquee reveal" aria-label="Partner ecosystem"><div className="mtrack"><div className="plist mset"><span>Microsoft Azure</span><span>AWS</span><span>Google Cloud</span><span>Lenovo</span><span>Dell</span><span>HP</span><span>CrowdStrike</span><span>Fortinet</span><span>Mimecast</span><span>Zoho</span><span>Infosys</span><span>HCL</span><span>Wipro</span></div><div className="plist mset" aria-hidden="true"><span>Microsoft Azure</span><span>AWS</span><span>Google Cloud</span><span>Lenovo</span><span>Dell</span><span>HP</span><span>CrowdStrike</span><span>Fortinet</span><span>Mimecast</span><span>Zoho</span><span>Infosys</span><span>HCL</span><span>Wipro</span></div></div></div>
   </section>
 
+  
+  <section className="band">
+    <div className="shead center reveal" style={{margin: '0 auto 40px'}}><span className="eyebrow">Proof</span>
+      <h2>From potential to production</h2></div>
+    <div className="tst reveal">
+      <div className="q"><p>“EmpowerED transformed my career. Hands-on AI engineering and real production experience gave me the confidence to land my dream role. I was billable from day one.”</p><div className="who"><span className="av">PS</span><div><strong>Priya Sharma</strong><span>AI Engineer</span></div></div></div>
+      <div className="q"><p>“From a non-IT background, I was skeptical. But the structured AWS pathway and enterprise simulations prepared me perfectly. I switched careers in just 18 weeks.”</p><div className="who"><span className="av">RK</span><div><strong>Rajesh Kumar</strong><span>Cloud Engineer</span></div></div></div>
+      <div className="q"><p>“The enterprise partnership connected me directly with my employer. Working real SIEM platforms inside an agile squad made all the difference.”</p><div className="who"><span className="av">AP</span><div><strong>Aisha Patel</strong><span>Cybersecurity Analyst</span></div></div></div>
+    </div>
+  </section>
 
   <section className="ctaband"><span className="glow"></span><span className="grid-ovl"></span><div className="inner reveal">
     <img src={assets['hero-handshake-detail-v3']} alt="A robotic hand and a human hand clasped together" style={{width: '180px', height: 'auto', margin: '0 auto 20px', display: 'block'}}/>
