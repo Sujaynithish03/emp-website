@@ -41,11 +41,12 @@ export default function Home() {
         <h2>A trusted <mark>pipeline of high-quality talent</mark> for employers.</h2></div>
       <div style={{position: 'relative', display: 'inline-block', width: '100%', marginBottom: '40px'}} className="reveal">
         <img src={assets['home-advantage-banner']} alt="A professional connected to five badges representing enterprise-ready skills" className="banner-illustration" style={{width: '100%', height: 'auto', display: 'block'}}/>
-        <div style={{position: 'absolute', bottom: '40px', right: '60px', textAlign: 'center', padding: '20px', background: 'rgba(255,255,255,0.95)', borderRadius: '16px', backdropFilter: 'blur(10px)'}}>
-          <div style={{fontSize: '12px', fontWeight: '700', letterSpacing: '1.5px', color: 'var(--secondary)', marginBottom: '12px', textTransform: 'uppercase'}}>Scan to Connect</div>
-          <div style={{width: '120px', height: '120px', background: '#f0f0f0', borderRadius: '8px', margin: '0 auto 12px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '11px', color: '#999', fontWeight: '600'}}>QR Code Here</div>
-          <div style={{fontSize: '13px', fontWeight: '700', color: 'var(--dark)', marginBottom: '4px'}}>Explore Opportunities</div>
-          <div style={{fontSize: '11px', color: 'var(--muted)', lineHeight: '1.4'}}>Join our talent pipeline today</div>
+        <div style={{position: 'absolute', bottom: '30px', right: '50px', textAlign: 'center', padding: '28px 24px', background: '#fff', borderRadius: '20px', backdropFilter: 'blur(10px)', boxShadow: '0 10px 40px rgba(0,0,0,0.15)', border: '2px solid var(--yellow)', minWidth: '180px'}}>
+          <div style={{fontSize: '11px', fontWeight: '800', letterSpacing: '2.5px', color: 'var(--secondary)', marginBottom: '16px', textTransform: 'uppercase'}}>► Scan to Connect</div>
+          <div style={{width: '140px', height: '140px', background: 'linear-gradient(135deg, #f0f7f2 0%, #e8f3ed 100%)', borderRadius: '12px', margin: '0 auto 16px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '12px', color: '#888', fontWeight: '700', border: '2px dashed var(--secondary)'}}>QR Code</div>
+          <div style={{fontSize: '15px', fontWeight: '800', color: 'var(--dark)', marginBottom: '6px'}}>Explore Opportunities</div>
+          <div style={{fontSize: '12px', color: '#666', lineHeight: '1.5', fontWeight: '500', marginBottom: '14px'}}>Scan & join our talent pipeline</div>
+          <div style={{fontSize: '10px', color: 'var(--secondary)', fontWeight: '700', marginTop: '10px', paddingTop: '12px', borderTop: '1px solid #e0e8df'}}>✓ Instant Access • ✓ No Sign-up</div>
         </div>
       </div>
       <div className="advantage reveal">
