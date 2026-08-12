@@ -39,7 +39,15 @@ export default function Home() {
     <div className="inner">
       <div className="shead reveal"><span className="eyebrow">Enterprise Talent Advantage</span>
         <h2>A trusted <mark>pipeline of high-quality talent</mark> for employers.</h2></div>
-      <img src={assets['home-advantage-banner']} alt="A professional connected to five badges representing enterprise-ready skills" className="banner-illustration reveal"/>
+      <div style={{position: 'relative', display: 'inline-block', width: '100%', marginBottom: '40px'}} className="reveal">
+        <img src={assets['home-advantage-banner']} alt="A professional connected to five badges representing enterprise-ready skills" className="banner-illustration" style={{width: '100%', height: 'auto', display: 'block'}}/>
+        <div style={{position: 'absolute', bottom: '40px', right: '60px', textAlign: 'center', padding: '20px', background: 'rgba(255,255,255,0.95)', borderRadius: '16px', backdropFilter: 'blur(10px)'}}>
+          <div style={{fontSize: '12px', fontWeight: '700', letterSpacing: '1.5px', color: 'var(--secondary)', marginBottom: '12px', textTransform: 'uppercase'}}>Scan to Connect</div>
+          <div style={{width: '120px', height: '120px', background: '#f0f0f0', borderRadius: '8px', margin: '0 auto 12px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '11px', color: '#999', fontWeight: '600'}}>QR Code Here</div>
+          <div style={{fontSize: '13px', fontWeight: '700', color: 'var(--dark)', marginBottom: '4px'}}>Explore Opportunities</div>
+          <div style={{fontSize: '11px', color: 'var(--muted)', lineHeight: '1.4'}}>Join our talent pipeline today</div>
+        </div>
+      </div>
       <div className="advantage reveal">
         <div className="adv"><div className="iconwrap ic" style={{margin: '0', padding: '8px'}}><svg className="ico" viewBox="0 0 32 32"><rect fill="#155F4B" x="6" y="6" width="20" height="20" rx="5"/><rect fill="#5AB94B" x="11" y="11" width="10" height="10" rx="2.5"/><rect fill="#5AB94B" x="14.6" y="1.5" width="2.8" height="5"/><rect fill="#5AB94B" x="14.6" y="25.5" width="2.8" height="5"/><rect fill="#5AB94B" x="1.5" y="14.6" width="5" height="2.8"/><rect fill="#5AB94B" x="25.5" y="14.6" width="5" height="2.8"/></svg></div><div><strong>AI</strong><span>AI-Powered Assessments</span></div></div>
         <div className="adv"><div className="iconwrap ic" style={{margin: '0', padding: '8px'}}><svg className="ico" viewBox="0 0 32 32"><rect fill="#155F4B" x="5" y="18" width="22" height="10" rx="5"/><circle fill="#5AB94B" cx="16" cy="10" r="6.5"/></svg></div><div><strong>40+</strong><span>Enterprise Roles</span></div></div>
