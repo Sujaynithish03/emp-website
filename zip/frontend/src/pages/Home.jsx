@@ -69,8 +69,8 @@ export default function Home() {
             width: '320px'
           }}
         >
-          <div style={{fontSize: '18px', fontWeight: '900', letterSpacing: '2px', color: '#fff', marginBottom: '28px', textTransform: 'uppercase', lineHeight: '1.3'}}>
-            ► Scan to Connect
+          <div style={{fontSize: '28px', fontWeight: '900', letterSpacing: '2px', color: '#fff', marginBottom: '28px', textTransform: 'uppercase', lineHeight: '1.3'}}>
+            ► Scan to <mark>Register</mark>
           </div>
           <div style={{width: '210px', height: '210px', borderRadius: '10px', margin: '0 auto 24px', background: '#fff', padding: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
             <img
