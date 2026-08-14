@@ -12,7 +12,7 @@ export default function About() {
         <h1 style={{marginTop: '16px'}}>Building the workforce of the <mark>AI era</mark>.</h1>
         <p className="sub">EmpowerED Careers by Teceze is a next-generation Talent Transformation Company developing an enterprise-ready Human + AI workforce through an industry-led, outcome-driven ecosystem.</p>
       </div>
-      <img className="hl-banner" src={assets['hero-about']} alt="A group of professionals standing together"/>
+      <img className="hl-banner" src={assets['hero-about']} alt="A group of professionals standing together" style={{transform: "translateX(150px) scale(1.6)"}}/>
     </div>
   </section>
 

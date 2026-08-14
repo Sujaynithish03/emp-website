@@ -55,7 +55,7 @@ export default function Contact() {
             <h1>Empowering Human Potential.<br />Enabling <mark>AI Futures</mark>.</h1>
             <p className="sub">Tell us what you're building — a career, a campus program, or a workforce — and we'll take it from there.</p>
           </div>
-          <img className="rail-img" src={assets['hero-contact']} alt="A professional reaching out to connect" />
+          <img className="rail-img" src={assets['hero-contact']} alt="A professional reaching out to connect" style={{transform: "translateX(-250px) scale(2.4)"}}/>
         </div>
       </section>
 
@@ -100,8 +100,20 @@ export default function Contact() {
             )}
           </form>
 
-          <img src={assets['contact-illustration']} alt="A friendly professional reaching out with a message panel"
-               className="banner-illustration reveal" style={{ marginBottom: '16px' }} />
+          <img
+src={assets['contact-illustration']}
+  alt="A friendly professional reaching out with a message panel"
+  className="banner-illustration reveal"
+  style={{
+    width: "100%",
+    height: "100%",
+    maxWidth: "750px",
+    objectFit: "contain",
+    display: "block",
+    margin: "0 auto",
+    transform: "scale(1.3)"
+  }}
+/>
 
           <div className="cinfo reveal">
             <div className="box"><strong>Talk to Us</strong><span>+91-75399 99500</span></div>

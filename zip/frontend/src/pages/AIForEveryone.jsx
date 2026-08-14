@@ -13,7 +13,19 @@ export default function AIForEveryone() {
         <p className="sub">AI is the new digital literacy. We equip students, professionals, entrepreneurs, and organizations with practical, profession-specific AI skills that improve productivity, decision-making, creativity, and career growth.</p>
         <div className="ctas"><a href="#solutions" className="btn btn-yellow" data-nav>Find Your Pathway</a><a href="#programs" className="btn btn-ghost" data-nav>Explore Programs</a></div>
       </div>
-      <img className="rail-img" src={assets['hero-ai-everyone']} alt="Every profession connected to AI"/>
+      <img
+  className="rail-img"
+  src={assets['hero-ai-everyone']}
+  alt="Every profession connected to AI"
+  style={{
+    width: "100%",
+    maxWidth: "700px",
+    height: "auto",
+    display: "block",
+    objectFit: "contain",
+    transform: "scale(2.4)",
+  }}
+/>
     </div>
   </section>
 

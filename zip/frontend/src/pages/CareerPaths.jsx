@@ -14,7 +14,20 @@ export default function CareerPaths() {
         <p className="sub">Every professional builds a foundation across six horizontal skill towers before specializing — from entry-level associate to advanced architect.</p>
         <div className="ctas"><a href="#programs" className="btn btn-yellow" data-nav>See the Programs</a><a href="#contact" className="btn btn-ghost" data-nav>Start Your Career</a></div>
       </div>
-      <img className="rail-img" src={assets['hero-career-paths']} alt="A staircase branching into multiple career paths"/>
+     <img
+  className="rail-img"
+  src={assets['hero-career-paths']}
+  alt="A staircase branching into multiple career paths"
+  style={{
+    width: "100%",
+    maxWidth: "700px",
+    height: "auto",
+    display: "block",
+    objectFit: "contain",
+    transform: "scale(2.1)",
+    transformOrigin: "center center"
+  }}
+/>
     </div>
   </section>
 
