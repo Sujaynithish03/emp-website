@@ -89,7 +89,7 @@ export default function Programs() {
 
 <section>
     <div className="shead reveal"><span className="eyebrow">Sprint-Based Delivery Framework</span><h2>A real product cadence</h2></div>
-    <img src={assets['sprint-cycle']} alt="A squad working around a circular sprint board" className="banner-illustration reveal"/>
+    <img src={assets['sprint-cycle']} alt="A squad working around a circular sprint board" className="banner-illustration reveal" style={{display: 'block', margin: '0 auto'}}/>
     <div className="sprint reveal">
       <div className="sp"><b>01</b><h4>Product Vision</h4><span>Saturday strategy sessions</span></div>
       <div className="sp"><b>02</b><h4>Sprint Planning</h4><span>Sunday task allocation</span></div>

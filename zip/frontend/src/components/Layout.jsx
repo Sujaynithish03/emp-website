@@ -174,7 +174,7 @@ export default function Layout() {
             <div className="fcol">
               <h4>Contact</h4>
               <p>+91-75399 99500</p>
-              <p>info@EmpowerEDcareers.ai</p>
+              <p>info@empoweredcareers.ai</p>
               <p>SIDCO Industrial Estate, Guindy, Chennai 600032</p>
             </div>
           </div>
