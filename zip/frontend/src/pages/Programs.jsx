@@ -34,7 +34,7 @@ export default function Programs() {
             // background: 'white',
             borderRadius: '24px',
             boxShadow: '0 16px 48px rgba(0,0,0,0.15)',
-            width: '420px',
+            width: '430px',
             zIndex: 10
           }}
         >
