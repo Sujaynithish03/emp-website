@@ -24,40 +24,15 @@ export default function Programs() {
       </div>
       <div style={{ position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         {/* <img className="hl-banner" src={assets['hero-programs']} alt="A professional beside three ascending platforms representing staged learning"/> */}
-        <div
-          style={{
-            position: 'absolute',
-            top: '-240px',
-            right: '-610px',
-            textAlign: 'center',
-            padding: '40px 32px',
-            // background: 'white',
-            borderRadius: '24px',
-            boxShadow: '0 16px 48px rgba(0,0,0,0.15)',
-            width: '430px',
-            zIndex: 10
-          }}
-        >
-          <div style={{fontSize: '28px', fontWeight: '900', letterSpacing: '2px', color: '#0f2b22', marginBottom: '28px', textTransform: 'uppercase', lineHeight: '1.3'}}>
-            ► Scan to <mark style={{color: '#eac10e'}}>Register</mark>
-          </div>
-          <div style={{width: '210px', height: '210px', borderRadius: '10px', margin: '0 auto 24px', background: '#f5f5f5', padding: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-            <img
-              src={assets['qrcode']}
-              alt="Scan to connect QR code"
-              style={{width: '100%', height: '100%', borderRadius: '4px', display: 'block', objectFit: 'contain'}}
-            />
-          </div>
-          <div style={{fontSize: '18px', fontWeight: '900', color: '#0f2b22', marginBottom: '10px', lineHeight: '1.3'}}>
-            Explore Opportunities
-          </div>
-          <div style={{fontSize: '14px', color: 'rgba(15,43,34,0.75)', lineHeight: '1.6', fontWeight: '700', marginBottom: '18px'}}>
-            Scan & join our talent pipeline
-          </div>
-          <div style={{fontSize: '12px', color: '#eac10e', fontWeight: '800', marginTop: '14px', paddingTop: '16px', borderTop: '3px solid #F6DB2D', letterSpacing: '0.8px'}}>
-            ✓ Instant Access • ✓ No Sign-up
-          </div>
-        </div>
+        <div className="qr-card">
+<div className="qr-title">► Scan to <mark style={{color: '#eac10e'}}>Register</mark></div>
+<div className="qr-imgwrap">
+<img src={assets['qrcode']} alt="Scan to connect QR code" />
+</div>
+<div className="qr-sub">Explore Opportunities</div>
+<div className="qr-desc">Scan &amp; join our talent pipeline</div>
+<div className="qr-tag">✓ Instant Access • ✓ No Sign-up</div>
+</div>
       </div>
 
     </div>
