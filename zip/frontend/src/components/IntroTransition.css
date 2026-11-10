@@ -38,23 +38,13 @@ body.eg-intro-locked {
   transition: background-color 600ms ease;
 }
 
-.eg-intro[data-phase='shatter'],
+.eg-intro[data-phase='leaving'],
 .eg-intro[data-phase='done'] {
   background: var(--eg-paper);
 }
 
-/* Once the glass exists it IS the picture, so the backdrop must clear out —
-   otherwise the site can't be seen through the gaps between the shards. */
-.eg-intro[data-glass='true'] {
-  background: transparent;
-  /* Instant, not the inherited 600ms fade — the site has to be visible through
-     the cracks on the very first frame of the break, or the shards look like
-     they're falling against a black wall. */
-  transition: none;
-}
-
-.eg-intro[data-phase='done'],
-.eg-intro[data-glass='true'] {
+.eg-intro[data-phase='leaving'],
+.eg-intro[data-phase='done'] {
   pointer-events: none;
 }
 
@@ -67,16 +57,9 @@ body.eg-intro-locked {
   transform: translateZ(0);
 }
 
-/* No glass (reduced motion, autoplay fallback, unreadable frame): the film
-   simply departs into depth and the site fades up behind it. */
-.eg-intro[data-phase='shatter'][data-glass='false'] .eg-intro__plane {
+/* The intro departs into depth as the site is revealed behind it. */
+.eg-intro[data-phase='leaving'] .eg-intro__plane {
   animation: eg-plane-depart 620ms var(--eg-ease-in) forwards;
-}
-
-/* With glass, the live video is swapped for its frozen frame instantly —
-   showing both at once would double-expose the picture. */
-.eg-intro[data-glass='true'] .eg-intro__plane {
-  opacity: 0;
 }
 
 @keyframes eg-plane-depart {
@@ -122,84 +105,9 @@ body.eg-intro-locked {
   transition: opacity 500ms ease;
 }
 
-.eg-intro[data-phase='shatter'] .eg-intro__vignette,
+.eg-intro[data-phase='leaving'] .eg-intro__vignette,
 .eg-intro[data-phase='done'] .eg-intro__vignette {
   opacity: 0;
-}
-
-/* ==========================================================================
-   Broken glass — the final frame of the film, cut into irregular shards that
-   fly apart and fall, revealing the live site behind them.
-   ========================================================================== */
-.eg-glass {
-  position: absolute;
-  inset: 0;
-  z-index: 3;
-  pointer-events: none;
-}
-
-.eg-glass__shard {
-  position: absolute;
-  inset: 0;
-  display: block;
-  background-size: 100% 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  will-change: transform, opacity;
-  transform: translate3d(0, 0, 0);
-  animation: eg-shard-fly 1150ms cubic-bezier(0.2, 0.55, 0.25, 1) both;
-  /* A hairline lip along each cut so the breaks read as glass edges. */
-  filter: drop-shadow(0 0 0.6px rgba(255, 255, 255, 0.75));
-}
-
-@keyframes eg-shard-fly {
-  0% {
-    transform: translate3d(0, 0, 0) rotate(0deg) scale(1);
-    opacity: 1;
-  }
-  10% {
-    transform: translate3d(calc(var(--dx) * 0.04), calc(var(--dy) * 0.02), 0)
-      rotate(calc(var(--rot) * 0.06)) scale(1.012);
-    opacity: 1;
-  }
-  70% {
-    opacity: 0.85;
-  }
-  100% {
-    transform: translate3d(var(--dx), var(--dy), 0) rotate(var(--rot)) scale(0.9);
-    opacity: 0;
-  }
-}
-
-/* The impact: a hard white bloom on the frame at the instant it breaks. */
-.eg-glass__flash {
-  position: absolute;
-  left: 50%;
-  top: 46%;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: #fff;
-  box-shadow: 0 0 90px 44px rgba(255, 255, 255, 0.9),
-    0 0 200px 110px rgba(238, 165, 13, 0.5);
-  transform: translate(-50%, -50%) scale(0.4);
-  opacity: 0;
-  animation: eg-glass-flash 520ms ease-out both;
-}
-
-@keyframes eg-glass-flash {
-  0% {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(0.4);
-  }
-  14% {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
-  }
-  100% {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(2.6);
-  }
 }
 
 /* --------------------------------------------------------------------------
@@ -470,9 +378,7 @@ body.eg-intro-locked {
    ========================================================================== */
 @media (prefers-reduced-motion: reduce) {
   .eg-intro__plane,
-  .eg-intro[data-phase='shatter'] .eg-intro__plane,
-  .eg-glass__shard,
-  .eg-glass__flash,
+  .eg-intro[data-phase='leaving'] .eg-intro__plane,
   .eg-fallback__half--l,
   .eg-fallback__half--r,
   .eg-fallback__flash,
@@ -490,7 +396,7 @@ body.eg-intro-locked {
     transition: opacity 300ms linear;
   }
 
-  .eg-intro[data-phase='shatter'],
+  .eg-intro[data-phase='leaving'],
   .eg-intro[data-phase='done'] {
     opacity: 0;
   }

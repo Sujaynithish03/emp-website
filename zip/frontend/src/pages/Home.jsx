@@ -23,9 +23,11 @@ export default function Home() {
           </div>
         </div>
         <div className="reveal">
-          <img
+          <img width="1536" height="1024"
             src={assets['hero-handshake-main-v3']}
             alt="An AI robot and a professional shaking hands"
+            loading="eager"
+            fetchPriority="high"
             className="w-full max-w-[560px] h-auto block ml-auto"
           />
         </div>
@@ -49,7 +51,7 @@ export default function Home() {
         }}
         className="reveal"
       >
-        <img
+        <img width="1536" height="1024" loading="lazy"
           src={assets['home-advantage-banner']}
           alt="A professional connected to five badges representing enterprise-ready skills"
           className="banner-illustration"
@@ -73,7 +75,7 @@ export default function Home() {
             ► Scan to <mark>Register</mark>
           </div>
           <div style={{width: '210px', height: '210px', borderRadius: '10px', margin: '0 auto 24px', background: '#fff', padding: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-            <img
+            <img width="320" height="320" loading="lazy"
               src={assets['qrcode']}
               alt="Scan to connect QR code"
               style={{width: '100%', height: '100%', borderRadius: '4px', display: 'block', objectFit: 'contain'}}
@@ -105,7 +107,7 @@ export default function Home() {
     <div className="shead reveal"><span className="eyebrow">The Impact We Create</span>
       <h2>From raw potential to <mark>Day-1 billable</mark> professionals.</h2>
       <p className="muted">Our AI Talent Factory integrates structured learning, hands-on labs, real-world projects, industry mentorship, continuous assessment, and career deployment into one comprehensive transformation journey.</p></div>
-    <img src={assets['home-pipeline']} alt="A figure transforming through three stages into a confident professional" className="banner-illustration reveal"/>
+    <img width="1536" height="1024" loading="lazy" src={assets['home-pipeline']} alt="A figure transforming through three stages into a confident professional" className="banner-illustration reveal"/>
     <TalentPipeline />
   </section>
 
@@ -116,10 +118,10 @@ export default function Home() {
     <div className="shead reveal"><span className="eyebrow">Traditional vs. Empowered Model</span>
       <h2>Traditional learning creates trainees.<br/>Industry needs <mark>product builders</mark>.</h2></div>
     <div className="cmp reveal">
-      <div className="card old"><img src={assets['contrast-classroom']} alt="A passive learner in a static classroom" className="contrast-img"/><h3>Traditional Education</h3><ul>
+      <div className="card old"><img width="380" height="380" loading="lazy" src={assets['contrast-classroom']} alt="A passive learner in a static classroom" className="contrast-img"/><h3>Traditional Education</h3><ul>
         <li><i>—</i>Theory-first, lecture-heavy</li><li><i>—</i>Isolated assignments, no agile exposure</li><li><i>—</i>6–12 months to productivity</li><li><i>—</i>Success measured by course completion</li>
       </ul></div>
-      <div className="card new"><img src={assets['contrast-factory']} alt="An active learner building in a dynamic factory setting" className="contrast-img"/><h3>EmpowerED Factory</h3><ul>
+      <div className="card new"><img width="380" height="380" loading="lazy" src={assets['contrast-factory']} alt="An active learner building in a dynamic factory setting" className="contrast-img"/><h3>EmpowerED Factory</h3><ul>
         <li><i>✓</i>Product-first, agile squads</li><li><i>✓</i>Real deployments &amp; sprint delivery</li><li><i>✓</i>Day-1 billable professionals</li><li><i>✓</i>Success measured by career outcomes</li>
       </ul></div>
     </div>
@@ -132,11 +134,11 @@ export default function Home() {
     <div className="inner">
       <div className="shead reveal"><span className="eyebrow">Inside the Factory</span>
         <h2>One pathway. Three stages.</h2>
-        <p>Foundational capability, deep Specialization, and deployed Expertise — the whole journey, structured end to end.</p></div>
+        <p>Career Launch builds strong foundations, Career Pro develops role-based specialization, and Career Accelerate adds experience for the next step in your career.</p></div>
       <div className="row reveal">
-        <div className="box"><div className="num" style={{background: '#5AB94B'}}>1</div><small>≈ 12 WEEKS</small><h3>Foundational</h3><p>A common baseline for every professional, from any background.</p></div>
-        <div className="box"><div className="num" style={{background: '#3f8f6f'}}>2</div><small>8–16 WEEKS</small><h3>Specialization</h3><p>Deep capability in one high-demand domain.</p></div>
-        <div className="box"><div className="num" style={{background: '#F6DB2D'}}>3</div><small>ENTERPRISE READY</small><h3>Expertise</h3><p>Deployed on real enterprise work until Day-1 billable.</p></div>
+        <div className="box"><div className="num" style={{background: '#5AB94B'}}>1</div><small>≈ 12 WEEKS</small><h3>Career Launch</h3><p>Build Your Foundation: develop essential skills, get career coaching, prepare for interviews, and build a job-ready portfolio.</p></div>
+        <div className="box"><div className="num" style={{background: '#3f8f6f'}}>2</div><small>8–16 WEEKS</small><h3>Career Pro</h3><p>Specialize and Grow: build role-based capabilities through practical projects, employer connections, and placement-focused support.</p></div>
+        <div className="box"><div className="num" style={{background: '#F6DB2D'}}>3</div><small>ENTERPRISE READY</small><h3>Career Accelerate</h3><p>Gain Experience, Go Further: build advanced capabilities with industry experience, expert mentoring, and employer engagement.</p></div>
       </div>
       <Link to="/programs" className="btn btn-green">Explore the programs →</Link>
     </div>
@@ -151,7 +153,7 @@ export default function Home() {
         <p className="muted" style={{fontSize: '16px', marginBottom: '22px'}}>AI is the new digital literacy. We equip students, professionals, entrepreneurs, and organizations with practical, profession-specific AI skills that improve productivity, decision-making, creativity, and career growth.</p>
         <Link to="/ai-for-everyone" className="btn btn-outline">Explore AI for Everyone →</Link>
       </div>
-      <div className="reveal"><img src={assets['home-ai-teaser']} alt="A professional working naturally alongside an AI assistant"/></div>
+      <div className="reveal"><img width="1400" height="933" loading="lazy" src={assets['home-ai-teaser']} alt="A professional working naturally alongside an AI assistant"/></div>
     </div>
   </section>
 
@@ -188,7 +190,7 @@ export default function Home() {
   </section>
 
   <section className="ctaband"><span className="glow"></span><span className="grid-ovl"></span><div className="inner reveal">
-    <img src={assets['hero-handshake-detail-v3']} alt="A robotic hand and a human hand clasped together" style={{width: '180px', height: 'auto', margin: '0 auto 20px', display: 'block'}}/>
+    <img width="900" height="600" loading="lazy" src={assets['hero-handshake-detail-v3']} alt="A robotic hand and a human hand clasped together" style={{width: '180px', height: 'auto', margin: '0 auto 20px', display: 'block'}}/>
     <h2>Learn. Build. Validate. Deploy.</h2>
     <p>We transform talent into enterprise-ready professionals equipped to succeed in the AI-powered future of work.</p>
     <div className="ctas"><Link to="/contact" className="btn btn-yellow">Get Started</Link><Link to="/#factory-model" className="btn btn-ghost">Explore the Factory</Link></div>

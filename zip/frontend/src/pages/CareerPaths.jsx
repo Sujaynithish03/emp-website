@@ -14,8 +14,8 @@ export default function CareerPaths() {
         <p className="sub">Every professional builds a foundation across six horizontal skill towers before specializing — from entry-level associate to advanced architect.</p>
         <div className="ctas"><a href="#programs" className="btn btn-yellow" data-nav>See the Programs</a><a href="#contact" className="btn btn-ghost" data-nav>Start Your Career</a></div>
       </div>
-     <img
-  className="rail-img"
+     <img width="900" height="600" loading="eager"
+  fetchPriority="high" className="rail-img"
   src={assets['hero-career-paths']}
   alt="A staircase branching into multiple career paths"
   style={{
@@ -36,9 +36,9 @@ export default function CareerPaths() {
   <section className="band" id="programs">
     <div className="shead reveal"><span className="eyebrow">Clear Career Progression</span><h2>From associate to architect</h2></div>
     <div className="progression reveal">
-      <div className="prog"><img className="prog-img" src={assets['career-entry']} alt="A junior professional on the first step of a staircase"/><span className="pn">01</span><h4>Entry-Level Roles</h4><p>0–2 years · Associate roles applying foundational and specialization capability on real work.</p></div>
-      <div className="prog"><img className="prog-img" src={assets['career-intermediate']} alt="A mid-level professional explaining to a junior colleague"/><span className="pn">02</span><h4>Intermediate Roles</h4><p>2–5 years · Engineer and specialist roles owning delivery, quality, and systems.</p></div>
-      <div className="prog"><img className="prog-img" src={assets['career-advanced']} alt="A senior architect at the top of the staircase"/><span className="pn">03</span><h4>Advanced Architecture Roles</h4><p>5+ years · Architect and consultant roles setting technical direction across the enterprise.</p></div>
+      <div className="prog"><img width="260" height="260" loading="lazy" className="prog-img" src={assets['career-entry']} alt="A junior professional on the first step of a staircase"/><span className="pn">01</span><h4>Entry-Level Roles</h4><p>0–2 years · Associate roles applying foundational and specialization capability on real work.</p></div>
+      <div className="prog"><img width="260" height="260" loading="lazy" className="prog-img" src={assets['career-intermediate']} alt="A mid-level professional explaining to a junior colleague"/><span className="pn">02</span><h4>Intermediate Roles</h4><p>2–5 years · Engineer and specialist roles owning delivery, quality, and systems.</p></div>
+      <div className="prog"><img width="260" height="260" loading="lazy" className="prog-img" src={assets['career-advanced']} alt="A senior architect at the top of the staircase"/><span className="pn">03</span><h4>Advanced Architecture Roles</h4><p>5+ years · Architect and consultant roles setting technical direction across the enterprise.</p></div>
     </div>
   </section>
 

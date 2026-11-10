@@ -156,7 +156,7 @@ function TrackCard({ track, reverse }) {
             to={track.to}
             className="flex items-center gap-[8px] text-[#005c2f] text-[20px] font-bold transition-all duration-200 hover:gap-[12px]"
           >
-            Start your Career <img src={arrowIcon} alt="" className="size-[23px]" />
+            Start your Career <img width="22.7668" height="22.7668" loading="lazy" src={arrowIcon} alt="" className="size-[23px]" />
           </Link>
         </div>
       </div>
@@ -172,7 +172,7 @@ export default function HorizontalSkillTowers() {
     >
       <div className="flex flex-col gap-[25px] items-center text-center">
         <div className="bg-[#005c2f] rounded-full h-[47px] flex items-center gap-[10px] px-[24px]">
-          <img src={zapIcon} alt="" className="size-[21px]" />
+          <img width="20.9264" height="20.9264" loading="lazy" src={zapIcon} alt="" className="size-[21px]" />
           <span className="text-white text-[16px] font-semibold">6 Career Tracks</span>
         </div>
         <div className="flex flex-col gap-[5px]">

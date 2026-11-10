@@ -12,7 +12,7 @@ export default function CareerPathsHero() {
       <div className="absolute inset-0 bg-black/50 sm:hidden" />
       <div className="relative z-10 flex flex-col gap-[10px] items-start max-w-[633px]">
         <div className="border-[1.3px] border-white sm:border-[#005c2f] rounded-full h-[52px] flex items-center gap-[10px] px-[20px]">
-          <img src={badgeIcon} alt="" className="size-[21px] brightness-0 invert sm:brightness-100 sm:invert-0" />
+          <img width="20.9264" height="20.9264" loading="lazy" src={badgeIcon} alt="" className="size-[21px] brightness-0 invert sm:brightness-100 sm:invert-0" />
           <span className="text-white sm:text-[#005c2f] text-[16px] font-medium">Career Paths</span>
         </div>
         <h1

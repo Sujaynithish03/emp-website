@@ -12,26 +12,26 @@ export default function About() {
         <h1 style={{marginTop: '16px'}}>Building the workforce of the <mark>AI era</mark>.</h1>
         <p className="sub">EmpowerED Careers by Teceze is a next-generation Talent Transformation Company developing an enterprise-ready Human + AI workforce through an industry-led, outcome-driven ecosystem.</p>
       </div>
-      <img className="hl-banner" src={assets['hero-about']} alt="A group of professionals standing together" style={{transform: "translateX(150px) scale(1.6)"}}/>
+      <img width="900" height="600" loading="eager" fetchPriority="high" className="hl-banner" src={assets['hero-about']} alt="A group of professionals standing together" style={{transform: "translateX(150px) scale(1.6)"}}/>
     </div>
   </section>
 
   <section>
     <div className="shead reveal"><span className="eyebrow">The Impact We Create</span><h2>Founded to bridge the gap.</h2>
       <p className="muted">The world is entering a new era where every profession will be transformed by AI. Organizations no longer look for qualifications alone — they need professionals who think critically, solve complex problems, collaborate, and leverage AI to create measurable business value. Unlike traditional institutes that measure success by course completion, we measure success by career outcomes, business impact, and workforce readiness.</p></div>
-    <img src={assets['about-vision']} alt="A wide group of professionals standing together, unified purpose" className="banner-illustration reveal" style={{margin: '24px 0'}}/>
+    <img width="1440" height="960" loading="lazy" src={assets['about-vision']} alt="A wide group of professionals standing together, unified purpose" className="banner-illustration reveal" style={{margin: '24px 0'}}/>
     <a href="#about" className="btn btn-outline" data-scroll="about-leadership" data-nav>Meet Our Leadership</a>
   </section>
 
   <section className="band">
     <div className="shead reveal"><span className="eyebrow">What Makes Us Different</span><h2>Real-world engineering that transforms careers</h2></div>
     <div className="grid3 reveal">
-      <div className="card"><img className="prof-img" src={assets['diff-curriculum']} alt="A professional pointing at a real enterprise workflow diagram"/><h3>Industry-First Curriculum</h3><p>Not theory-first — every module designed around real enterprise use cases, tools, and workflows.</p></div>
-      <div className="card"><img className="prof-img" src={assets['diff-handson']} alt="A professional assembling hands-on project blocks"/><h3>50% Hands-On Expertise</h3><p>Half of every program dedicated to practical labs, live projects, and sandbox environments.</p></div>
-      <div className="card"><img className="prof-img" src={assets['diff-capstone']} alt="A professional presenting a completed project dashboard"/><h3>Capstone Projects</h3><p>Every learner delivers a production-grade capstone for an actual industry vertical.</p></div>
-      <div className="card"><img className="prof-img" src={assets['about-mentors']} alt="Experienced mentors guiding learners"/><h3>Industry Mentors</h3><p>Active practitioners with 10+ years of experience — not just academic instructors.</p></div>
-      <div className="card"><img className="prof-img" src={assets['diff-certifications']} alt="A professional holding a glowing certification badge"/><h3>Industry Certifications</h3><p>Earn credentials in AI, Cloud, and Cybersecurity recognized by top MNCs.</p></div>
-      <div className="card"><img className="prof-img" src={assets['diff-consulting']} alt="A mentor guiding a colleague through a career panel"/><h3>Career Consulting</h3><p>Resume building, interview prep, MNC connections — every step of your journey.</p></div>
+      <div className="card"><img width="800" height="533" loading="lazy" className="prof-img" src={assets['diff-curriculum']} alt="A professional pointing at a real enterprise workflow diagram"/><h3>Industry-First Curriculum</h3><p>Not theory-first — every module designed around real enterprise use cases, tools, and workflows.</p></div>
+      <div className="card"><img width="800" height="533" loading="lazy" className="prof-img" src={assets['diff-handson']} alt="A professional assembling hands-on project blocks"/><h3>50% Hands-On Expertise</h3><p>Half of every program dedicated to practical labs, live projects, and sandbox environments.</p></div>
+      <div className="card"><img width="800" height="533" loading="lazy" className="prof-img" src={assets['diff-capstone']} alt="A professional presenting a completed project dashboard"/><h3>Capstone Projects</h3><p>Every learner delivers a production-grade capstone for an actual industry vertical.</p></div>
+      <div className="card"><img width="520" height="346" loading="lazy" className="prof-img" src={assets['about-mentors']} alt="Experienced mentors guiding learners"/><h3>Industry Mentors</h3><p>Active practitioners with 10+ years of experience — not just academic instructors.</p></div>
+      <div className="card"><img width="800" height="533" loading="lazy" className="prof-img" src={assets['diff-certifications']} alt="A professional holding a glowing certification badge"/><h3>Industry Certifications</h3><p>Earn credentials in AI, Cloud, and Cybersecurity recognized by top MNCs.</p></div>
+      <div className="card"><img width="800" height="533" loading="lazy" className="prof-img" src={assets['diff-consulting']} alt="A mentor guiding a colleague through a career panel"/><h3>Career Consulting</h3><p>Resume building, interview prep, MNC connections — every step of your journey.</p></div>
     </div>
   </section>
 
@@ -45,7 +45,7 @@ export default function About() {
           <h2 style={{color: '#fff', fontSize: 'clamp(26px,3.4vw,36px)', margin: '14px 0 20px'}}>Empowering Human Potential. Enabling <mark>AI Futures</mark>.</h2>
           <div className="quote">“Our mission is to bridge the gap between education and industry, creating enterprise-ready professionals who can thrive in a rapidly evolving digital economy. Through inclusive leadership, collaborative partnerships, and a passion for lifelong learning, we are building a workforce that reflects diverse perspectives, drives innovation, and creates sustainable careers.”</div>
         </div>
-        <img src={assets['about-capabilities']} alt="Five professionals each holding a symbol of a capability pillar" className="banner-illustration reveal" style={{marginBottom: '20px'}}/>
+        <img width="1536" height="1024" loading="lazy" src={assets['about-capabilities']} alt="Five professionals each holding a symbol of a capability pillar" className="banner-illustration reveal" style={{marginBottom: '20px'}}/>
         <div className="cap5 reveal">
           <div className="c"><div className="iconwrap ic" style={{margin: '0'}}><svg className="ico" viewBox="0 0 32 32"><rect fill="#155F4B" x="6" y="6" width="20" height="20" rx="5"/><rect fill="#5AB94B" x="11" y="11" width="10" height="10" rx="2.5"/><rect fill="#5AB94B" x="14.6" y="1.5" width="2.8" height="5"/><rect fill="#5AB94B" x="14.6" y="25.5" width="2.8" height="5"/><rect fill="#5AB94B" x="1.5" y="14.6" width="5" height="2.8"/><rect fill="#5AB94B" x="25.5" y="14.6" width="5" height="2.8"/></svg></div><div><h4>AI &amp; Digital Skills</h4><p>Leveraging technology and automation to work smarter, faster, and at scale.</p></div></div>
           <div className="c"><div className="iconwrap ic" style={{margin: '0'}}><svg className="ico" viewBox="0 0 32 32"><rect fill="#155F4B" x="14.7" y="10" width="2.6" height="8"/><rect fill="#155F4B" x="9" y="18" width="8" height="2.6" transform="rotate(38 9 18)"/><rect fill="#155F4B" x="18" y="18.5" width="8" height="2.6" transform="rotate(-38 18 18.5)"/><circle fill="#5AB94B" cx="16" cy="6.5" r="4.5"/><circle fill="#155F4B" cx="6.5" cy="25" r="4.5"/><circle fill="#155F4B" cx="25.5" cy="25" r="4.5"/></svg></div><div><h4>Industry Domain Expertise</h4><p>Sector-specific knowledge that drives real-world problem solving and credibility.</p></div></div>
@@ -73,12 +73,12 @@ export default function About() {
   <section className="band">
     <div className="shead reveal"><span className="eyebrow">World-Class Infrastructure</span><h2>Where the building happens</h2></div>
     <div className="infra reveal">
-      <div className="lab"><div className="pic"><img src={assets['lab-smart-classroom']} alt="A modern classroom with an interactive display panel"/></div><div className="b"><h4>Smart Classrooms</h4><p>AI-enabled interactive displays, wireless presentation, HD conferencing.</p></div></div>
-      <div className="lab"><div className="pic"><img src={assets['lab-infra']} alt="A professional beside an open server rack cabinet"/></div><div className="b"><h4>Infrastructure Labs</h4><p>Enterprise hardware, Cisco/Juniper networking, VMware clusters.</p></div></div>
-      <div className="lab"><div className="pic"><img src={assets['lab-cybersecurity']} alt="A professional monitoring security-alert panels"/></div><div className="b"><h4>Cybersecurity Lab</h4><p>Isolated attack simulation, Kali Linux, SIEM platforms.</p></div></div>
-      <div className="lab"><div className="pic"><img src={assets['lab-iot']} alt="Hands assembling a circuit board with sensors"/></div><div className="b"><h4>IoT Hardware Lab</h4><p>Arduino, ESP32, Raspberry Pi, PLC stations.</p></div></div>
-      <div className="lab"><div className="pic"><img src={assets['lab-aiml']} alt="A professional beside a neural-network training graph"/></div><div className="b"><h4>AI/ML Cluster</h4><p>GPU workstations, JupyterHub, containerized ML environments.</p></div></div>
-      <div className="lab"><div className="pic"><img src={assets['lab-cloud']} alt="A professional gesturing at a cloud-architecture diagram"/></div><div className="b"><h4>Cloud Labs</h4><p>AWS sandbox accounts, Azure subscriptions, isolated VPC per learner.</p></div></div>
+      <div className="lab"><div className="pic"><img width="400" height="266" loading="lazy" src={assets['lab-smart-classroom']} alt="A modern classroom with an interactive display panel"/></div><div className="b"><h4>Smart Classrooms</h4><p>AI-enabled interactive displays, wireless presentation, HD conferencing.</p></div></div>
+      <div className="lab"><div className="pic"><img width="400" height="266" loading="lazy" src={assets['lab-infra']} alt="A professional beside an open server rack cabinet"/></div><div className="b"><h4>Infrastructure Labs</h4><p>Enterprise hardware, Cisco/Juniper networking, VMware clusters.</p></div></div>
+      <div className="lab"><div className="pic"><img width="400" height="266" loading="lazy" src={assets['lab-cybersecurity']} alt="A professional monitoring security-alert panels"/></div><div className="b"><h4>Cybersecurity Lab</h4><p>Isolated attack simulation, Kali Linux, SIEM platforms.</p></div></div>
+      <div className="lab"><div className="pic"><img width="400" height="266" loading="lazy" src={assets['lab-iot']} alt="Hands assembling a circuit board with sensors"/></div><div className="b"><h4>IoT Hardware Lab</h4><p>Arduino, ESP32, Raspberry Pi, PLC stations.</p></div></div>
+      <div className="lab"><div className="pic"><img width="400" height="266" loading="lazy" src={assets['lab-aiml']} alt="A professional beside a neural-network training graph"/></div><div className="b"><h4>AI/ML Cluster</h4><p>GPU workstations, JupyterHub, containerized ML environments.</p></div></div>
+      <div className="lab"><div className="pic"><img width="400" height="266" loading="lazy" src={assets['lab-cloud']} alt="A professional gesturing at a cloud-architecture diagram"/></div><div className="b"><h4>Cloud Labs</h4><p>AWS sandbox accounts, Azure subscriptions, isolated VPC per learner.</p></div></div>
     </div>
   </section>
 

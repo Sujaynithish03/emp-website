@@ -1,8 +1,8 @@
 const STAGES = [
   { key: 'source', label: 'Source', caption: 'High-potential talent', badge: null },
-  { key: 'foundation', label: 'Foundation', caption: 'Common baseline', badge: '1' },
-  { key: 'specialization', label: 'Specialization', caption: 'Deep in one domain', badge: '2' },
-  { key: 'expertise', label: 'Expertise', caption: 'Live enterprise work', badge: '3' },
+  { key: 'foundation', label: 'Career Launch', caption: 'Build your foundation', badge: '1' },
+  { key: 'specialization', label: 'Career Pro', caption: 'Specialize and grow', badge: '2' },
+  { key: 'expertise', label: 'Career Accelerate', caption: 'Gain experience, go further', badge: '3' },
   { key: 'deployed', label: 'Deployed', caption: 'Day-1 billable', badge: 'check' },
 ];
 
@@ -23,7 +23,7 @@ export default function TalentPipeline() {
         preserveAspectRatio="xMidYMid meet"
         xmlns="http://www.w3.org/2000/svg"
         role="img"
-        aria-label="Talent pipeline: Source, Foundation, Specialization, Expertise, Deployed"
+        aria-label="Talent pipeline: Source, Career Launch, Career Pro, Career Accelerate, Deployed"
       >
         <defs>
           {/* Raw talent (grey) → foundation (deep green) → capability (accent) → billable (gold) */}

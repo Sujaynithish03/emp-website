@@ -1,5 +1,6 @@
 import React from 'react';
 import { assets } from '../assets/manifest';
+import { trackContactSubmission } from '../utils/analytics';
 
 const INTEREST_OPTIONS = [
   'Students & Graduates — launch my career',
@@ -37,6 +38,7 @@ export default function Contact() {
       });
       const data = await res.json().catch(() => ({}));
       if (!res.ok) throw new Error(data.error || 'Something went wrong. Please try again.');
+      trackContactSubmission();
       setStatus('success');
       setForm({ name: '', email: '', interest: INTEREST_OPTIONS[0], message: '' });
     } catch (err) {
@@ -55,7 +57,7 @@ export default function Contact() {
             <h1>Empowering Human Potential.<br />Enabling <mark>AI Futures</mark>.</h1>
             <p className="sub">Tell us what you're building — a career, a campus program, or a workforce — and we'll take it from there.</p>
           </div>
-          <img className="rail-img" src={assets['hero-contact']} alt="A professional reaching out to connect" style={{transform: "translateX(-250px) scale(2.4)"}}/>
+          <img width="900" height="600" loading="eager" fetchPriority="high" className="rail-img" src={assets['hero-contact']} alt="A professional reaching out to connect" style={{transform: "translateX(-250px) scale(2.4)"}}/>
         </div>
       </section>
 
@@ -100,7 +102,7 @@ export default function Contact() {
             )}
           </form>
 
-          <img
+          <img width="1400" height="933" loading="lazy"
 src={assets['contact-illustration']}
   alt="A friendly professional reaching out with a message panel"
   className="banner-illustration reveal"

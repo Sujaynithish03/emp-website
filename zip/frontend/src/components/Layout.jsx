@@ -56,7 +56,7 @@ export default function Layout() {
       <header className="site">
         <div className="topbar">
           <Link to="/" className="brand">
-            <img src={pngAssets.favicon} alt="EmpowerED Careers" className="brand-logo" />
+            <img width="700" height="185" src={pngAssets.favicon} alt="EmpowerED Careers" className="brand-logo" />
           </Link>
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
             <Link to="/contact" className="btn btn-yellow" style={{ padding: '10px 20px', fontSize: '14px' }}>
@@ -151,7 +151,7 @@ export default function Layout() {
           <div className="fgrid">
             <div>
               <div className="fbrand">
-                <img src={pngAssets.logo} alt="EmpowerED Careers" style={{height: '80px', width: 'auto', display: 'block', marginBottom: '16px'}} />
+                <img width="1330" height="328" loading="lazy" src={pngAssets.logo} alt="EmpowerED Careers" style={{height: '80px', width: 'auto', display: 'block', marginBottom: '16px'}} />
               </div>
               <p style={{ maxWidth: '270px', fontSize: '14px' }}>
                 Empowering Talent. Transforming Futures. The AI Talent Factory — a Talent Transformation Company by Teceze.
@@ -181,6 +181,7 @@ export default function Layout() {
           <div className="fbot">
             <span>© {new Date().getFullYear()} EmpowerED Careers by Teceze. All rights reserved.</span>
             <div className="lg">
+              {import.meta.env.VITE_GA_MEASUREMENT_ID && <button type="button" onClick={() => window.dispatchEvent(new Event('open-analytics-consent'))} style={{ color: 'inherit', font: 'inherit' }}>Cookie settings</button>}
               <Link to="/terms">Terms</Link>
               <Link to="/privacy">Privacy</Link>
               <Link to="/cookies">Cookies</Link>

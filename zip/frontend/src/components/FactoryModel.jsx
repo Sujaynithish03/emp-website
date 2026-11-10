@@ -357,7 +357,7 @@ export default function FactoryModel() {
 
           {/* Central Factory Model node */}
           <div className="relative lg:absolute lg:top-[42%] lg:left-[50%] lg:-translate-x-1/2 lg:-translate-y-1/2 z-10 flex flex-col items-center justify-center gap-0 whitespace-nowrap mt-[40px] lg:mt-0 order-first lg:order-none mb-[40px] lg:mb-0">
-            <img
+            <img width="429" height="387" loading="lazy"
               src={vector3}
               alt="Factory Model"
               className="w-[280px] sm:w-[400px] lg:w-[520px] h-[280px] sm:h-[400px] lg:h-[520px] object-contain shrink-0"
@@ -398,7 +398,7 @@ export default function FactoryModel() {
         {/* Step 1: Student (Top Center) */}
         <div className="w-full sm:w-[340px] lg:absolute lg:left-[50%] lg:top-[-20%] lg:-translate-x-1/2 flex flex-col items-center text-center mb-[40px] lg:mb-0 bg-black/10 lg:bg-transparent p-6 lg:p-0 rounded-2xl border border-white/5 lg:border-none z-10">
           <div className="relative w-[300px] sm:w-[400px] h-[300px] sm:h-[400px] flex items-center justify-center mb-[10px]">
-            <img src={steps[0].img} alt={steps[0].title} className="w-[280px] sm:w-[380px] h-[280px] sm:h-[380px] object-contain relative z-10" />
+            <img width="386" height="386" loading="lazy" src={steps[0].img} alt={steps[0].title} className="w-[280px] sm:w-[380px] h-[280px] sm:h-[380px] object-contain relative z-10" />
           </div>
           <div className="flex gap-[8px] items-center mt-[-90px] sm:mt-[-130px] justify-center">
             <span className="size-[22px] rounded-full border border-[#efb81c] text-[#efb81c] text-[12px] font-bold flex items-center justify-center">
@@ -412,7 +412,7 @@ export default function FactoryModel() {
         {/* Step 2: Squad Member (Middle Right) */}
         <div className="w-full sm:w-[320px] lg:absolute lg:right-[7%] lg:top-[18%] flex flex-col items-center text-center mb-[40px] lg:mb-0 bg-black/10 lg:bg-transparent p-6 lg:p-0 rounded-2xl border border-white/5 lg:border-none z-10">
           <div className="relative w-[300px] sm:w-[400px] h-[300px] sm:h-[400px] flex items-center justify-center mb-[10px]">
-            <img src={steps[1].img} alt={steps[1].title} className="w-[280px] sm:w-[380px] h-[280px] sm:h-[380px] object-contain relative z-10" />
+            <img width="386" height="386" loading="lazy" src={steps[1].img} alt={steps[1].title} className="w-[280px] sm:w-[380px] h-[280px] sm:h-[380px] object-contain relative z-10" />
           </div>
           <div className="flex gap-[8px] items-center mt-[-70px] sm:mt-[-110px] justify-center">
             <span className="size-[22px] rounded-full border border-[#efb81c] text-[#efb81c] text-[12px] font-bold flex items-center justify-center">
@@ -426,7 +426,7 @@ export default function FactoryModel() {
         {/* Step 3: Engineer (Bottom Right) */}
         <div className="w-full sm:w-[320px] lg:absolute lg:right-[6%] lg:bottom-[-18%] flex flex-col items-center text-center mb-[40px] lg:mb-0 bg-black/10 lg:bg-transparent p-6 lg:p-0 rounded-2xl border border-white/5 lg:border-none z-10">
           <div className="relative w-[300px] sm:w-[400px] h-[300px] sm:h-[400px] flex items-center justify-center mb-[10px]">
-            <img src={steps[2].img} alt={steps[2].title} className="w-[280px] sm:w-[380px] h-[280px] sm:h-[380px] object-contain relative z-10" />
+            <img width="386" height="386" loading="lazy" src={steps[2].img} alt={steps[2].title} className="w-[280px] sm:w-[380px] h-[280px] sm:h-[380px] object-contain relative z-10" />
           </div>
           <div className="flex gap-[8px] items-center mt-[-70px] sm:mt-[-110px] justify-center">
             <span className="size-[22px] rounded-full border border-[#efb81c] text-[#efb81c] text-[12px] font-bold flex items-center justify-center">
@@ -440,7 +440,7 @@ export default function FactoryModel() {
         {/* Step 4: Product Contributor (Bottom Left) */}
         <div className="w-full sm:w-[320px] lg:absolute lg:left-[6%] lg:bottom-[-15%] flex flex-col items-center text-center mb-[40px] lg:mb-0 bg-black/10 lg:bg-transparent p-6 lg:p-0 rounded-2xl border border-white/5 lg:border-none z-10">
           <div className="relative w-[300px] sm:w-[400px] h-[300px] sm:h-[400px] flex items-center justify-center mb-[10px]">
-            <img src={steps[3].img} alt={steps[3].title} className="w-[280px] sm:w-[380px] h-[280px] sm:h-[380px] object-contain relative z-10" />
+            <img width="386" height="386" loading="lazy" src={steps[3].img} alt={steps[3].title} className="w-[280px] sm:w-[380px] h-[280px] sm:h-[380px] object-contain relative z-10" />
           </div>
           <div className="flex gap-[8px] items-center mt-[-60px] sm:mt-[-90px] justify-center">
             <span className="size-[22px] rounded-full border border-[#efb81c] text-[#efb81c] text-[12px] font-bold flex items-center justify-center">
@@ -454,7 +454,7 @@ export default function FactoryModel() {
         {/* Step 5: Enterprise Professional (Middle Left) */}
         <div className="w-full sm:w-[320px] lg:absolute lg:left-[2%] lg:top-[10%] flex flex-col items-center text-center mb-[40px] lg:mb-0 bg-black/10 lg:bg-transparent p-6 lg:p-0 rounded-2xl border border-white/5 lg:border-none z-10">
           <div className="relative w-[300px] sm:w-[400px] h-[300px] sm:h-[400px] flex items-center justify-center mb-[10px]">
-            <img src={steps[4].img} alt={steps[4].title} className="w-[280px] sm:w-[380px] h-[280px] sm:h-[380px] object-contain relative z-10" />
+            <img width="414" height="414" loading="lazy" src={steps[4].img} alt={steps[4].title} className="w-[280px] sm:w-[380px] h-[280px] sm:h-[380px] object-contain relative z-10" />
           </div>
           <div className="flex gap-[8px] items-center mt-[-70px] sm:mt-[-110px] justify-center">
             <span className="size-[22px] rounded-full border border-[#efb81c] text-[#efb81c] text-[12px] font-bold flex items-center justify-center">
