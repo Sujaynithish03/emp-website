@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { assets } from '../assets/manifest';
 import FactoryModel from '../components/FactoryModel';
 import TalentPipeline from '../components/TalentPipeline';
+import ContactSection from '../components/ContactSection';
 
 export default function Home() {
   return (
@@ -195,6 +196,8 @@ export default function Home() {
     <p>We transform talent into enterprise-ready professionals equipped to succeed in the AI-powered future of work.</p>
     <div className="ctas"><Link to="/contact" className="btn btn-yellow">Get Started</Link><Link to="/#factory-model" className="btn btn-ghost">Explore the Factory</Link></div>
   </div></section>
+
+  <ContactSection />
     </>
   );
 }

@@ -1,6 +1,7 @@
 import { SITE_URL } from './seoConfig';
 
 const GA_ID = import.meta.env.VITE_GA_MEASUREMENT_ID;
+const GTM_ID = import.meta.env.VITE_GTM_CONTAINER_ID;
 const CONSENT_KEY = 'empoweredcareers.analytics-consent';
 let initialized = false;
 let lastPageView = '';
@@ -11,22 +12,33 @@ function hasConsent() {
 }
 
 export function initializeAnalytics() {
-  if (typeof window === 'undefined' || !GA_ID || !hasConsent()) return Promise.resolve(false);
+  if (typeof window === 'undefined' || (!GA_ID && !GTM_ID) || !hasConsent()) return Promise.resolve(false);
   if (initialized) return scriptPromise || Promise.resolve(true);
   initialized = true;
   window.dataLayer = window.dataLayer || [];
-  window.gtag = function gtag() { window.dataLayer.push(arguments); };
-  window.gtag('consent', 'default', { analytics_storage: 'granted', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' });
-  window.gtag('js', new Date());
-  window.gtag('config', GA_ID, { send_page_view: false });
+  window.gtag = window.gtag || function gtag() { window.dataLayer.push(arguments); };
+  window.gtag('consent', 'update', { analytics_storage: 'granted', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' });
+
   scriptPromise = new Promise((resolve) => {
-    const existing = document.querySelector(`script[src^="https://www.googletagmanager.com/gtag/js?id=${GA_ID}"]`);
+    const scriptUrl = GTM_ID
+      ? `https://www.googletagmanager.com/gtm.js?id=${encodeURIComponent(GTM_ID)}`
+      : `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(GA_ID)}`;
+    const existing = document.querySelector(`script[src^="${scriptUrl}"]`);
     if (existing) { resolve(true); return; }
     const script = document.createElement('script');
     script.async = true;
-    script.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(GA_ID)}`;
+    script.src = scriptUrl;
+    if (GTM_ID) {
+      window.dataLayer.push({ 'gtm.start': Date.now(), event: 'gtm.js' });
+    } else {
+      window.gtag('config', GA_ID, { send_page_view: false });
+    }
     script.onload = () => resolve(true);
-    script.onerror = () => resolve(false);
+    script.onerror = () => {
+      initialized = false;
+      scriptPromise = undefined;
+      resolve(false);
+    };
     document.head.appendChild(script);
   });
   return scriptPromise;

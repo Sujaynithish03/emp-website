@@ -1,17 +1,19 @@
 import { useEffect, useState } from 'react';
 import { setAnalyticsConsent } from './analytics';
 
+const ANALYTICS_CONFIGURED = Boolean(import.meta.env.VITE_GA_MEASUREMENT_ID || import.meta.env.VITE_GTM_CONTAINER_ID);
+
 export default function AnalyticsConsent() {
   const [visible, setVisible] = useState(false);
   useEffect(() => {
-    if (!import.meta.env.VITE_GA_MEASUREMENT_ID) return undefined;
+    if (!ANALYTICS_CONFIGURED) return undefined;
     const stored = (() => { try { return window.localStorage.getItem('empoweredcareers.analytics-consent'); } catch { return null; } })();
     if (stored === null) setVisible(true);
     const open = () => setVisible(true);
     window.addEventListener('open-analytics-consent', open);
     return () => window.removeEventListener('open-analytics-consent', open);
   }, []);
-  if (!visible || !import.meta.env.VITE_GA_MEASUREMENT_ID) return null;
+  if (!visible || !ANALYTICS_CONFIGURED) return null;
 
   const choose = (granted) => {
     if (setAnalyticsConsent(granted)) setVisible(false);
