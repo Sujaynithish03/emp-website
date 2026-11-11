@@ -15,7 +15,7 @@ Copy `.env.example` to `.env` for local development and set:
 - `VITE_SITE_URL`: production HTTPS origin, with no trailing slash. Defaults in code to `https://empoweredcareers.ai`.
 - `VITE_ORGANIZATION_NAME`: official organization name used in structured data; defaults to EmpowerED Careers by Teceze.
 
-Vite embeds `VITE_` values in public client code. Never place passwords, private API keys, SMTP credentials, or admin tokens in them. `.env` is ignored by Git; configure production values in the hosting provider's environment settings and rebuild after changes.
+Vite embeds `VITE_` values in public client code. Never place passwords or private API keys in them. `.env` is ignored by Git; configure production values in the hosting provider's environment settings and rebuild after changes.
 
 ## Google Analytics 4
 
